@@ -53,5 +53,16 @@ namespace VendorOrder.Tests
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void Find_ReturnsCorrectVendor_Vendor()
+    {
+      string name1 = "Home Depot";
+      Vendor newVendor1 = new Vendor(name1);
+      string name2 = "Lowes";
+      Vendor newVendor2 = new Vendor(name2);
+
+      Vendor result = Vendor.Find(2);
+      Assert.AreEqual(newVendor2, result);
+    }
   }
 }
