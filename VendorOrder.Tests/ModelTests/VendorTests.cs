@@ -26,6 +26,13 @@ namespace VendorOrder.Tests
       string result = newVendor.Name;
       Assert.AreEqual(name, result);
     }
+    [TestMethod]
+    public void GetID_ReturnsID_Int()
+    {
+      string name = "Home Depot";
+      Vendor newVendor = new Vendor(name);
+      int Id = newVendor.Id;
+      Assert.AreEqual(1. Id);
+    }
   }
-
 }
