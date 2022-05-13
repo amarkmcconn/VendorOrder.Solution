@@ -4,45 +4,31 @@
     <meta charset="utf-8">
     <title>Vendor</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
-  </style>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
   </head>
   <body>
-    @using VendorOrder.Models;
+    <div class="container">
+      @using VendorOrder.Models;
 
-    <h3>Here are all the orders for this Vendor:</h3>
+      <h3>Here are all the orders for this Vendor:</h3>
 
-    <table>
-      <th>Description</th>
-      <th>Price</th>
-      <th>Date Purchased</th>
-    @foreach (Order order in @Model["order"])
-    {
-    <tr>
-      <td><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description </a></td>
-      <td>$@order.Price</td>
-      <td>@order.Date</td>
-    </tr> 
-    }
-    </table>
+      <table>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Date Purchased</th>
+      @foreach (Order order in @Model["order"])
+      {
+      <tr>
+        <td><a href='/vendor/@Model["vendor"].Id/order/@order.Id'>@order.Description </a></td>
+        <td>$@order.Price</td>
+        <td>@order.Date</td>
+      </tr> 
+      }
+      </table>
 
-    <br><p><a href='/vendor/@Model["vendor"].Id/order/new'>Add a new order</a></p>
-    <p><a href='/vendor'>Return to Vendor list</a></p>
-    <p><a href='/'>Return to home Page</a></p>
+      <br><p><a href='/vendor/@Model["vendor"].Id/order/new'>Add a new order</a></p>
+      <p><a href='/vendor'>Return to Vendor list</a></p>
+      <p><a href='/'>Return to home Page</a></p>
+    </div>
   </body>
 </html>
