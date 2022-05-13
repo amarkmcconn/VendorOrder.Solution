@@ -24,5 +24,15 @@ namespace VendorOrder.Tests
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
     }
+    [TestMethod]
+    public void OrderConstructor_ReturnsInstanceOfPrice_Order()
+    {
+      string description = "coffee cups";
+      double price = 10.50;
+      string date = "5/13/2022";
+      Order newOrder = new Order (description, price, date);
+      string result = newOrder.Price;
+      Assert.AreEqual(price, result);
+    }
   }
 }
