@@ -1,37 +1,42 @@
-# {Application Name}
+# Bakery Vendor and Order Tracker
 
-#### By **{List of contributors}**
+## By **Mark McConnell**
 
-#### {Brief description of application}
+This is an MVC application to help a bakery track vendors that purchase baked goods from the bakery and the orders belonging to those vendors.
 
-## Technologies Used
+## Technologies Used 🖥️
 
-* List all
-* the major technologies
-* you used in your project
-* here
+* _C#_
+* _MSTest_
+* _.Net 5.0_
+* _Git_
+* _VsCode_
+* _REPL_
 
-## Description
+## Description ✅
 
-{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}
+This is an MVC application to help a bakery track vendors that purchase baked goods from the bakery and the orders belonging to those vendors. For example, Pierre might supply croissants to a vendor called "Suzie's Cafe" once a week. Pierre may want to create a new Vendor to represent the cafe and add new Orders to it to help keep track of his expanding business relationships.
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements 🖊️
 
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
+* _Clone this repo: <https://github.com/amarkmcconn/VendorOrder.Solution>_
+* _Enter the new directory using the command ```cd VendorOrder.Solution```_
+* _In the root directory, confirm there is a .gitignore file_
+* _add "_/obj", "_/bin" , "*.vscode" to the .gitignore file. It will keep your repository clean of unnecessary files_
+* _run ```git add .gitignore```
+* _commit your changes_
+* _To ensure the project will run correctly run ```dotnet restore``` and ```dotnet build``` from the VendorOrder.Tests & VendorOrder directory_
+* _To interact with MSTest navigate to the VendorOrder.Tests directory and run ```dotnet test```_
+* _To interact with the local host website navigate to the VendorOrder directory and run ```dotnet run```_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+## Known Bugs 🐛
 
-## Known Bugs
-
-* Any known issues
-* should go here
+* _No Known Bugs_
 
 ## License
 
 [MIT](LICENSE)
 
-Copyright (c) date author name(s)
+_If you run into any issues or have questions, ideas, or concerns;  please email me: at mark.programming1@gmail.com or make a contribution to the code._
+
+Copyright (c) 2022 Mark McConnell
