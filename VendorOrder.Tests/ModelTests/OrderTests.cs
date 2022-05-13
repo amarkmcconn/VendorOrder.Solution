@@ -11,7 +11,7 @@ namespace VendorOrder.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order();
+      Order newOrder = new Order("coffee cups", 10.50, "5/13/2022");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
     [TestMethod]
@@ -19,7 +19,7 @@ namespace VendorOrder.Tests
     {
       string description = "coffee cups";
       double price = 10.50;
-      string date = 5/13/2022;
+      string date = "5/13/2022";
       Order newOrder = new Order (description, price, date);
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
