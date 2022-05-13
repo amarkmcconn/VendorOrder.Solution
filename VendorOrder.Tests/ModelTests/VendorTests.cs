@@ -40,7 +40,18 @@ namespace VendorOrder.Tests
       List<Vendor> newList = new List<Vendor> {};
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, result);
+    }
+    [TestMethod]
+    public void GetAll_ReturnsVendors_VendorList()
+    {
+      string name1 = "Home Depot";
+      Vendor newVendor1 = new Vendor(name1);
+      string name2 = "Lowes";
+      Vendor newVendor2 = new Vendor(name2);
+      List<Vendor> newList = new List<Vendor> {newVendor1, newVendor2};
 
+      List<Vendor> result = Vendor.GetAll();
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 }
