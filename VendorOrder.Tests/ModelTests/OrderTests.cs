@@ -31,7 +31,7 @@ namespace VendorOrder.Tests
       double price = 10.50;
       string date = "5/13/2022";
       Order newOrder = new Order (description, price, date);
-      string result = newOrder.Price;
+      double result = newOrder.Price;
       Assert.AreEqual(price, result);
     }
   }
