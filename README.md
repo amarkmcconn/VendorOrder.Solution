@@ -1,6 +1,6 @@
-# Bakery Vendor and Order Tracker
+# Bakery 🍞 Vendor and Order Tracker 📙
 
-## By **Mark McConnell**
+## By **Mark McConnell**👨
 
 This is an MVC application to help a bakery track vendors that purchase baked goods from the bakery and the orders belonging to those vendors.
 
@@ -35,7 +35,7 @@ This is an MVC application to help a bakery track vendors that purchase baked go
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE) :👈
 
 _If you run into any issues or have questions, ideas, or concerns;  please email me: at mark.programming1@gmail.com or make a contribution to the code._
 
