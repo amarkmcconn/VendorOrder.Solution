@@ -24,7 +24,7 @@ namespace VendorOrder.Controllers
     Vendor newVendor = new Vendor(vendorName);
     return RedirectToAction("Index");
     }
-    
+
     [HttpPost("/vendor/{vendorId}/order")]
     public ActionResult Create(int vendorId, string orderDescription, double orderPrice, string orderDate)
     {
@@ -33,7 +33,7 @@ namespace VendorOrder.Controllers
       Order newOrder = new Order(orderDescription, orderPrice, orderDate);
       foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
-      model.Add("orders", vendorOrders);
+      model.Add("order", vendorOrders);
       model.Add("vendor", foundVendor);
       return View("Show", model);
     }
