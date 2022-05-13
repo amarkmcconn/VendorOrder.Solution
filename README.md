@@ -25,7 +25,7 @@ This is an MVC application to help a bakery track vendors that purchase baked go
 * _add "_/obj", "_/bin" , "*.vscode" to the .gitignore file. It will keep your repository clean of unnecessary files_
 * _run ```git add .gitignore```
 * _commit your changes_
-* _To ensure the project will run correctly run ```dotnet restore``` and ```dotnet build``` from the VendorOrder.Tests & VendorOrder directory_
+* _To ensure the project will run correctly, run ```dotnet restore``` and ```dotnet build``` from the VendorOrder.Tests & VendorOrder directory_
 * _To interact with MSTest navigate to the VendorOrder.Tests directory and run ```dotnet test```_
 * _To interact with the local host website navigate to the VendorOrder directory and run ```dotnet run```_
 
