@@ -60,5 +60,20 @@ namespace VendorOrder.Tests
       // Assert
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsOrderList_OrderList()
+    {
+      string description1 = "coffee cups";
+      double price1 = 10.50;
+      string date1 = "5/13/2022";
+      Order newOrder1 = new Order (description1, price1, date1);
+      string description2 = "plates";
+      double price2 = 30.00;
+      string date2 = "5/13/2022";
+      Order newOrder2 = new Order (description2, price2, date2);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
