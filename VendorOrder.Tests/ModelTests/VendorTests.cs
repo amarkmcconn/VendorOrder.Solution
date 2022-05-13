@@ -32,7 +32,7 @@ namespace VendorOrder.Tests
       string name = "Home Depot";
       Vendor newVendor = new Vendor(name);
       int Id = newVendor.Id;
-      Assert.AreEqual(1. Id);
+      Assert.AreEqual(1, Id);
     }
   }
 }
