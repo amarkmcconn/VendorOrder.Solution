@@ -17,6 +17,8 @@ This is an MVC application to help a bakery track vendors that purchase baked go
 
 This is an MVC application to help a bakery track vendors that purchase baked goods from the bakery and the orders belonging to those vendors. For example, Pierre might supply croissants to a vendor called "Suzie's Cafe" once a week. Pierre may want to create a new Vendor to represent the cafe and add new Orders to it to help keep track of his expanding business relationships.
 
+![image](https://user-images.githubusercontent.com/101524368/170920193-9839472d-2584-4f41-aede-de8fe42d205e.png)
+
 ## Setup/Installation Requirements 🖊️
 
 * _Clone this repo: <https://github.com/amarkmcconn/VendorOrder.Solution>_
